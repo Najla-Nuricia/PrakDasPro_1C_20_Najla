@@ -15,7 +15,7 @@ public class p2_Percobaan3_pertanyaan1 {
         System.out.println("________________________________________________________________");
         System.out.println("|RTI241003  | Critcal Thinking dan Problem Solving | 2   | 4   |");
         System.out.println("________________________________________________________________");
-        System.out.println("|RTI241004  | Matematika Dasar                     | 3   | 6   |");
+        System.out.println("|RTI241004  | Matdas                               | 3   | 6   |");
         System.out.println("________________________________________________________________");
         System.out.println("|RTI241005  | Rekayasa Perangkat Lunak             | 2   | 4   |");
         System.out.println("________________________________________________________________");
