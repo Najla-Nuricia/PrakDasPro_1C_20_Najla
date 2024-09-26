@@ -16,6 +16,8 @@ public class P3_TugasNo1 {
     tagihanListrik = (tarifListrik * 1500);
 
     System.out.println("Total tagihan listrik Rp" + tagihanListrik);
+
+    input.close();
   }
 
 }

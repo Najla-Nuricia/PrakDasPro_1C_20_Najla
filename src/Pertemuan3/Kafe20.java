@@ -34,6 +34,10 @@ public class Kafe20 {
         System.out.println("total harga: " + totalHarga);
         System.out.println("total byte: " + (byte)totalHarga);
 
+        input.close();
+
+    
+
 
 
     }
