@@ -6,16 +6,13 @@ public class PemilihanBilangan20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Masukkan Sebuah Angka: ");
+        System.out.print("Masukkan Sebuah Angka:");
         int angka = sc.nextInt();
 
-        if (angka % 2 == 0) 
-        {
-            System.out.println("Angka " + angka + " Termasuk bilangan genap");
-        } 
-        else {
-            System.out.println("Angka " + angka + " termasuk bilangan ganjil");
-        }
-    }
+        String hasil;
+        hasil = (angka % 2 == 0) ? " Termasuk bilangan genap" : " Termasuk bilangan ganjil";
+
+        System.out.println( "Angka " + angka + hasil );
     
+    }
 }
