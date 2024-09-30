@@ -34,6 +34,8 @@ public class kuis1_no2 {
 
         System.out.print("Lama hari anda Student Exchange: " + lamaHari20);
 
+        sc.close();
+
 
     }
 }

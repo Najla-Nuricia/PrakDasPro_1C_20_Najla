@@ -43,6 +43,6 @@ public class kuis1_20 {
 
         System.out.println("tanggal kepulangan anda: " + tanggalPUlang20 + "-" + bulanPulang20 + "-" + tahunPulang20);
 
-    
+        sc.close();
     }
 }

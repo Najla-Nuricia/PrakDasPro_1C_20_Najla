@@ -18,5 +18,6 @@ public class P3_TugasNo2 {
         gajiBersih = (gajiBonus - (gajiBonus * pajak)) * 30;
 
         System.err.println("Gaji anda Rp" + gajiBersih);
+        input.close();
     }
 }

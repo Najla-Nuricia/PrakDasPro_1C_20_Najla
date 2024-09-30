@@ -13,6 +13,7 @@ public class PemilihanBilangan20 {
         hasil = (angka % 2 == 0) ? " Termasuk bilangan genap" : " Termasuk bilangan ganjil";
 
         System.out.println( "Angka " + angka + hasil );
+        sc.close();
     
     }
 }

@@ -28,7 +28,7 @@ public class kuis1_no3 {
         menitKuliah20 = jammenit - (jamKuliah20 * 60) + menitKuliah;
         System.out.println(jamKuliah20);
         System.out.println(menitKuliah20);
-
+        sc.close();
 
     }
 }
