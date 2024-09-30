@@ -31,7 +31,7 @@ public class lamahari20 {
         System.out.println("lama SE dalam tahun: " + lamaSEtahun20 + " tahun");
         System.out.println("Tanggal kepulangan anda: " + tanggalBerangkat20 + "-" + bulanBeragkat20 + "-" + thBrktSetelah20 );
         
-        
+        sc.close();
 
 
 
