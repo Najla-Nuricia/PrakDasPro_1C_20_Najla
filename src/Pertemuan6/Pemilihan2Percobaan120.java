@@ -22,7 +22,8 @@ public class Pemilihan2Percobaan120 {
                 System.out.println("tahun kabisat");
             }
          } else {
-            System.out.println("bukan tahun kabisat");
+            System.out.println("bukan tahun kabisat"); 
          }
+         sc20.close();
     }
 }

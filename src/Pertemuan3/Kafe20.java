@@ -36,9 +36,5 @@ public class Kafe20 {
 
         input.close();
 
-    
-
-
-
     }
 }
