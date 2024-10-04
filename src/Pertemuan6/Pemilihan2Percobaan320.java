@@ -12,7 +12,7 @@ public class Pemilihan2Percobaan320 {
 
         System.out.print("Masukkan Kategori : ");
         kategori = sc20.nextLine();
-        System.out.println("masukkan besar penghasilan : ");
+        System.out.print("masukkan besar penghasilan : ");
         penghasilan = sc20.nextInt();
 
         if (kategori.equalsIgnoreCase("pekerja")) {
@@ -23,7 +23,7 @@ public class Pemilihan2Percobaan320 {
             } else {
                 pajak = 0.2;
             }
-        } else if (kategori.equalsIgnoreCase("pebisnis")) {
+        } else if (kategori.equals("pebisnis")) {
             if (penghasilan <= 2500000) {
                 pajak = 0.15;
             } else if (penghasilan <= 35000000){
