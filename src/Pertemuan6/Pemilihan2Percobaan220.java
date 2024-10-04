@@ -80,6 +80,8 @@ public class Pemilihan2Percobaan220 {
             System.out.println("total harga: " + harga);
             System.out.println("total bayar: " + totalBayar);
         } 
+
+        sc20.close();
     }
     
 }
