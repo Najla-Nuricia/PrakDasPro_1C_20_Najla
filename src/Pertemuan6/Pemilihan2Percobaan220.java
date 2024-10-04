@@ -3,12 +3,15 @@ package Pertemuan6;
 import java.util.Scanner;
 
 public class Pemilihan2Percobaan220 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner sc20 = new Scanner(System.in);
 
         int pilihanMenu;
-        double diskon, totalBayar, harga=0;
-        boolean member;
+        double diskon, totalBayar=0, harga=0;
+        boolean member, qris;
 
         System.out.println("---------------");
         System.out.println("-Menu kafe JTI-");
@@ -20,7 +23,9 @@ public class Pemilihan2Percobaan220 {
         System.out.print("masukkan angka dari menu yang dipilih: ");
         pilihanMenu = sc20.nextInt();
         System.out.print("apakah punya member (true / false): ");
-        member = sc20.nextBoolean();
+        member = sc20.nextBoolean(); 
+        System.out.print("apakah pembayan menggunakan qris (true/false): ");
+        qris = sc20.nextBoolean();
         
 
         if (member == true) {
@@ -41,6 +46,13 @@ public class Pemilihan2Percobaan220 {
             }
 
             totalBayar = harga - (harga*diskon);
+
+            if (qris == true) {
+                totalBayar = totalBayar - 1000;
+            } else {
+                totalBayar = harga - (harga*diskon);
+            }
+
             System.out.println("total harga: " + harga);
             System.out.println("total bayar: " + totalBayar);
             
@@ -60,10 +72,14 @@ public class Pemilihan2Percobaan220 {
                 return;
             }
 
+            if (qris == true) {
+                totalBayar = harga - 1000;
+            } else {
+                totalBayar = harga;
+            }
             System.out.println("total harga: " + harga);
-            System.out.println("total bayar: " + harga);
+            System.out.println("total bayar: " + totalBayar);
         } 
-
     }
     
 }
