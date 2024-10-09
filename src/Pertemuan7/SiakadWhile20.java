@@ -12,6 +12,7 @@ public class SiakadWhile20 {
         jml = sc.nextInt();
 
         while (i < jml) {
+            i++;
             System.out.println("masukkan nilai mhs ke-" + (i + 1)+ ": ");
             nilai = sc.nextInt();
 
@@ -34,7 +35,6 @@ public class SiakadWhile20 {
             } else {
                 System.out.println("nilai mhs ke-" + (i + 1)+ "adalah e");
             }
-            i++;
     
             } 
             
