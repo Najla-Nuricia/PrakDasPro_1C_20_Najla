@@ -12,7 +12,6 @@ public class Pemilihan2Percobaan220 {
         int pilihanMenu;
         double diskon, totalBayar=0, harga=0;
         boolean member, qris;
-
         System.out.println("---------------");
         System.out.println("-Menu kafe JTI-");
         System.out.println("---------------");
@@ -26,8 +25,6 @@ public class Pemilihan2Percobaan220 {
         member = sc20.nextBoolean(); 
         System.out.print("apakah pembayan menggunakan qris (true/false): ");
         qris = sc20.nextBoolean();
-        
-
         if (member == true) {
             diskon = 0.1;
             System.out.println("diskon 10%");
@@ -71,7 +68,6 @@ public class Pemilihan2Percobaan220 {
                 System.out.println("masukkan pilihan menu dengan benar");
                 return;
             }
-
             if (qris == true) {
                 totalBayar = harga - 1000;
             } else {
@@ -80,8 +76,6 @@ public class Pemilihan2Percobaan220 {
             System.out.println("total harga: " + harga);
             System.out.println("total bayar: " + totalBayar);
         } 
-
         sc20.close();
-    }
-    
+    }  
 }
