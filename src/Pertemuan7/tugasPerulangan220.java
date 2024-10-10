@@ -25,10 +25,12 @@ public class tugasPerulangan220 {
                 durasi = sc.nextInt();
                 if (durasi > 5) {
                     total +=12500;
-                } if (jenis == 1) {
+                } else if (jenis == 1) {
                     total+=durasi*3000;
-                } if (jenis==2) {
+                } else if (jenis==2) {
                     total += durasi*2000;
+                } else {
+                    break;
                 }
                 System.out.println("total biaya parkir anda: " + total);
 
@@ -38,7 +40,7 @@ public class tugasPerulangan220 {
             
         } while (jenis != 0);
 
-        System.out.println("total pembayaran parkir anda" + total);
+        System.out.println("total pembayaran parkir anda " + total);
         sc.close();
     }
     
