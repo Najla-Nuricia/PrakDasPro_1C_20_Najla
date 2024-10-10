@@ -27,7 +27,7 @@ public class tugasPerulangan120 {
                 totalTiketDiskon = (tiketDibeli*hargaTiket) - ((tiketDibeli*hargaTiket)*diskon);
                 System.out.println("harga tiket: " + totalTiketDiskon);
             } else if (tiketDibeli > 10) {
-                diskon = 1.5;
+                diskon = 0.15;
                 totalTiketDiskon = (tiketDibeli*hargaTiket) - ((tiketDibeli*hargaTiket)*diskon);
                 System.out.println("harga tiket: " + totalTiketDiskon);
             } else {
