@@ -21,5 +21,6 @@ public class tugas1_20 {
             }
             System.out.println();
         }
+        sc.close();
     }   
 }
