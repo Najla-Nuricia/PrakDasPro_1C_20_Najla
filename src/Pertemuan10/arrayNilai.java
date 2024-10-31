@@ -10,7 +10,9 @@ public class arrayNilai {
             nilaiAkhir[i] = sc.nextInt();
         }
         for (int i = 0;i<10;i++) {
-            System.out.println("nilai akhir ke-"+i+" adalah " + nilaiAkhir[i]);
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("mahasiswa ke-"+i+" lulus!");
+            }
         }
         sc.close();
     }
