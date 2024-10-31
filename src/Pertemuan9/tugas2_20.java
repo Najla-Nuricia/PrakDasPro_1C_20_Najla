@@ -12,6 +12,8 @@ public class tugas2_20 {
 
         for (int i = 1 ; i <= poltek;i++ ) {
             System.out.println("Politeknik ke-" + i);
+            System.out.print("masukkan nama politeknik: ");
+            String nmPoltek = sc.nextLine();
                 System.out.println(" Atlet Badminton");
                 for (int k = 1 ; k<=5;k++) {
                     System.out.print(k +". ");
