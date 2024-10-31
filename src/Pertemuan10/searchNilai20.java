@@ -22,7 +22,7 @@ public class searchNilai20 {
                 if (nilaiDcr == arrNilai[i] ) {
                     hasil = (i+1);
                     System.out.println("nilai " + nilaiDcr + " ketemu, merupakan nilai mahasiswa ke-" + hasil);
-                } 
+                }  
             }
             sc.close();
         }
