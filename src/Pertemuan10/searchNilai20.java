@@ -22,11 +22,12 @@ public class searchNilai20 {
                 if (nilaiDcr == arrNilai[i] ) {
                     hasil = (i+1);
                     System.out.println("nilai " + nilaiDcr + " ketemu, merupakan nilai mahasiswa ke-" + hasil);
-                } else {
-                    System.out.println("nilai yang dicari tidak ditemukan");
-                    break;
-                }
+                } 
+
             }
+            if (hasil == 0) {
+                System.out.println("tidak ditemukan");
+            } 
             sc.close();
         }
 
