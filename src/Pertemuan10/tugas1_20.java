@@ -44,7 +44,7 @@ public class tugas1_20 {
         System.out.println("Rata - rata nilai: "+ rata);
         System.out.println("nilai tertinggi: "+ tertinggi);
         System.out.println("nilai terendah: "+ terendah);
-
+        sc.close();
     }
     
 }
