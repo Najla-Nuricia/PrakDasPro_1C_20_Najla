@@ -6,7 +6,7 @@ public class bioskopWithScanner20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String nama, next, data;
+        String nama, next;
         int baris, kolom, menu;
 
         String[][] penonton = new String[4][2];
@@ -30,6 +30,11 @@ public class bioskopWithScanner20 {
                     kolom = sc.nextInt();
                     sc.nextLine(); 
 
+                    if (baris < 1 || baris > 4 || kolom < 1 || kolom > 2) {
+                        System.out.println("Baris atau kolom tidak valid");
+                        continue;
+                    }
+
                     penonton[baris - 1][kolom - 1] = nama;
 
                     System.out.print("input penonton lainnya? (y/n): ");
@@ -37,7 +42,7 @@ public class bioskopWithScanner20 {
 
                     if (next.equalsIgnoreCase("n")) {
                         break;
-                    }
+                    } 
                 }
             } else if (menu == 2) {
             
