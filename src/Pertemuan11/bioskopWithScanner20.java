@@ -35,6 +35,11 @@ public class bioskopWithScanner20 {
                         continue;
                     }
 
+                    if (penonton[baris-1][kolom -1] != null) {
+                        System.out.println("kursi sudah terisi, silahkan isi kursi yang lain");
+                        continue;
+                    }
+
                     penonton[baris - 1][kolom - 1] = nama;
 
                     System.out.print("input penonton lainnya? (y/n): ");
