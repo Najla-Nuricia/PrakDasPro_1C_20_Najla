@@ -13,7 +13,9 @@ public class numbers20 {
             System.out.println(Arrays.toString(myNumbers[i]));
         }
 
-
+        for (int i = 0; i < myNumbers.length;i++) {
+            System.out.println("panjang baris ke-"+(i+1)+": "+ myNumbers[i].length);
+        }
     }
     
 }
