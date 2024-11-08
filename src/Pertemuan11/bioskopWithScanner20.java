@@ -53,6 +53,9 @@ public class bioskopWithScanner20 {
             
                     for (int i = 0; i < penonton.length; i++) {
                         for (int j = 0; j < penonton[i].length; j++) {
+                            if (penonton[i][j] ==null) {
+                                penonton[i][j] = "***";
+                            }
                             System.out.print(penonton[i][j] + " ");
                         }
                         System.out.println();
