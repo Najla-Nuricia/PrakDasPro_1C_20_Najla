@@ -5,18 +5,45 @@ public class Kafe19 {
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         Menu("andi" , false);
-        System.out.print("\nmasukkan nomor menu yang ingin anda pesan : ");
-        int pilihanMenu = sc.nextInt();
-        System.out.print("masukkan jumlah item yang ingin dipesan: ");
-        int banyakItem = sc.nextInt();
-        sc.nextLine();
-        System.out.print("masukkan kode promo: ");
-        String kodePromo = sc.nextLine();
 
-        double totalHarga = hitungTotalHarga19(pilihanMenu, banyakItem, kodePromo);
-        System.out.println("total harga untuk pesanan anda: Rp. " + totalHarga);
+        int pilihanMenu, banyakItem, totalAll=0, pesanan, bnykPesanan=0;
+        String kodePromo = "invalid";
+        double totalHarga=0;
+       
+
+        System.out.print("masukkan berapa menu yang akan di pesan: ");
+        pesanan = sc.nextInt();
+        String simpanMenu[] = new String[pesanan];
+        sc.nextLine();
+
+        System.out.print("masukkan kode promo: ");
+        kodePromo = sc.nextLine();
+
+
+        for (int i = 0 ; i < pesanan; i++) {
+            System.out.print("\nmasukkan nomor menu yang ingin anda pesan : ");
+            pilihanMenu = sc.nextInt();
+            System.out.print("masukkan jumlah item yang ingin dipesan: ");
+            banyakItem = sc.nextInt();
+            sc.nextLine(); 
+
+            totalHarga = hitungTotalHarga19(pilihanMenu, banyakItem, kodePromo);
+            totalAll += totalHarga; 
+
+           simpanMenu[bnykPesanan] = "menu " + pilihanMenu + " " + banyakItem + " item : " + "Rp." + totalHarga;
+           bnykPesanan++;
+        }
+        tampilStruk(bnykPesanan, simpanMenu);
+        
+        System.out.println("total harga untuk pesanan anda: Rp. " + totalAll);
     }
     
+    static void tampilStruk(int bnykPesanan, String[]simpanMenu) {
+        System.out.println("===Struk belanja anda===");
+        for (int i = 0; i < bnykPesanan;i++) {
+            System.out.println(simpanMenu[i]);
+        }
+    }
 
     public static void Menu(String namaPelanggan, boolean isMember) {
         System.out.println("selamat datang, " + namaPelanggan + " !");
