@@ -1,4 +1,4 @@
-package Pertemuan13;
+package Kuis2_19;
 import java.util.Scanner;
 public class kuis2_20 {
     public static void main(String[] args) {
