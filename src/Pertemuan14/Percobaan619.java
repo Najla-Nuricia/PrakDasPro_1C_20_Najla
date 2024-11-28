@@ -19,6 +19,7 @@ public class Percobaan619 {
         System.out.println("luas persegi panjang adalah " + Ls);
         vol = hitungVolume(t, p, l);
         System.out.println("volume balok adalah " + vol);
+        sc.close();
     }
     static int hitungLuas (int p, int l) {
         int Ls = p*l;
