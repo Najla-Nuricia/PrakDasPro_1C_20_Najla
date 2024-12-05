@@ -10,6 +10,7 @@ public class percobaan219 {
         sc.close();
 
         System.out.println(hitungPangkat(bilangan, pangkat));
+        printPerkalian(bilangan, pangkat);
     }
     static int hitungPangkat(int x , int y) {
         if (y == 0) {
@@ -17,5 +18,13 @@ public class percobaan219 {
         }else { 
             return (x * hitungPangkat(x, y - 1));
         }
+    
+    }
+
+    static void printPerkalian(int x , int y) {
+        for (int i = 0; i < y; i ++) {
+            System.out.print(x + " x ");
+        }
+        System.out.print("1 = " + hitungPangkat(x, y));
     }
 }
