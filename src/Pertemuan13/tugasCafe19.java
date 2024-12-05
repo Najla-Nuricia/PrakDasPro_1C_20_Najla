@@ -16,7 +16,7 @@ public class tugasCafe19 {
         inputNamamenu(brpMenu);
         int[][] dataPenjualan = inputData(brpMenu, brpHari);
         tampilData(dataPenjualan);
-        System.out.println("\nmenu dengan penjualan tertinggi: "+menuTertinggi(dataPenjualan));
+        System.out.println("\nmenu dengan penjualan tertinggi: " + menuTertinggi(dataPenjualan));
         rataPerMenu(dataPenjualan);
     }
 
